@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ezigo Travel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="top-header">
+    <div class="logo-wrapper">
+      <img src="Ezigo.jpg" alt="Ezigo Travel Logo" class="logo-animated">
+    </div>
+    <div class="search-bar">
+      <input id="searchInput" type="text" placeholder="">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <div class="header-icons">
+      <div><i class="fas fa-user"></i><span>Tài khoản</span></div>
+      <div><i class="fas fa-user"></i><span>Tài khoản1</span></div>
+      <div><i class="fas fa-heart"></i><span>Yêu thích <b class="badge">0</b></span></div>
+      <div><i class="fas fa-shopping-bag"></i><span>Giỏ hàng <b class="badge">0</b></span></div>
+    </div>
+  </div>
+
+  <!-- Menu -->
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="#">TRANG CHỦ</a></li>
+      <li><a href="#gioi-thieu">GIỚI THIỆU</a></li>
+      <li class="dropdown" id="tourDropdown">
+          <a href="#" id="dropdownToggle">TOUR DU LỊCH <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="#tour-kenhga">Minawa Kênh Gà</a></li>
+            <li><a href="#tour-catba">Flamingo Cát Bà</a></li>
+            <li><a href="#tour-tamcoc">Tam Cốc Melody Homestay</a></li>
+          </ul>
+        </li>
+
+      <li><a href="#">TIN TỨC</a></li>
+      <li><a href="#khach-san">KHÁCH SẠN</a></li>
+      <li><a href="#lien-he">LIÊN HỆ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="tour-slider">
+  <div class="slides">
+    <!-- kích thước ảnh 1920 x 1080  -->
+    <div class="slide"><img src="what-about-ha-long-bay.jpg" alt="Hạ Long"></div>
+    <div class="slide"><img src="minawa-kenh-ga-resort-2-1.jpg" alt="Minawa Kênh Gà"></div>
+    <div class="slide"><img src="flamingo_cát_bà.jpg" alt="Flamingo Cát Bà"></div>
+  </div>
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</section>
+
+
+<!-- Nút liên hệ cố định -->
+<div class="contact-fixed">
+  <a href="https://zalo.me/0976271701" target="_blank" class="zalo-btn">CHAT ZALO</a>
+  <a href="tel:0976271701" class="call-btn">GỌI NGAY</a>
+  <a href="https://www.facebook.com/people/Ezigo-Travel/61574435828601/" target="_blank" class="messenger-btn">MESSENGER</a>
+</div>
+
+
+
+  <section id="tour-kenhga" class="section">
+  <h2>Tour: Minawa Kênh Gà</h2>
+  <p>Tour nghỉ dưỡng kết hợp suối khoáng nóng tại Kênh Gà – Ninh Bình.</p>
+</section>
+
+<section id="tour-catba" class="section">
+  <h2>Tour: Flamingo Cát Bà</h2>
+  <p>Resort cao cấp ven biển với trải nghiệm thiên nhiên tuyệt vời tại Cát Bà.</p>
+</section>
+
+<section id="tour-tamcoc" class="section">
+  <h2>Tour: Tam Cốc Melody Homestay</h2>
+  <p>Trải nghiệm văn hóa địa phương giữa vùng núi đá vôi Tam Cốc.</p>
+</section>
+
+  <section id="khach-san" class="section hotel-section">
+    <h2><i class="fas fa-hotel"></i> Khách Sạn</h2>
+    <ul>
+      <li>Ninh Bình</li>
+      <li>Cát Bà</li>
+      <li>Ba Vì</li>
+    </ul>
+  </section>
+
+<section id="lien-he" class="section contact-section">
+  <h2><i class="fas fa-phone"></i> Liên Hệ</h2>
+  <p>
+    Số điện thoại: 
+    <a href="tel:0976271701" title="Gọi điện đến số 0976271701">
+      <strong>0976271701</strong>
+    </a>
+  </p>
+  <p>
+    Zalo: 
+    <a href="https://zalo.me/0976271701" target="_blank" title="Liên hệ qua Zalo">
+      <strong>0976271701</strong>
+    </a>
+  </p>
+  <p>
+    Nhắn tin cho chúng tôi:
+     <a href="https://www.facebook.com/people/Ezigo-Travel/61574435828601/" target="_blank" title="Nhắn tin qua Facebook">
+    <img src="messenger.jpg" alt="Messenger" class="messenger-icon" />
+  </a>
+  </p>
+</section>
+
+<section id="gioi-thieu" class="section intro-section">
+  <h2><i class="fas fa-info-circle"></i> Giới Thiệu</h2>
+
+  <div class="company-info">
+    <div class="info-left">
+      <img src="Ảnh bìa.jpg" alt="Ảnh văn phòng" />
+    </div>
+
+    <div class="info-right">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0390592910085!2d105.75298017584129!3d21.0311230876962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345496ffeed163%3A0xd029b4d6cdedbcfa!2zQ-G7pW0gY2h1bmcgY8awIFbEg24gcGjDsm5nIFF14buRYyBo4buZaQ!5e0!3m2!1svi!2s!4v1750386295481!5m2!1svi!2s" 
+      width="100%" 
+      height="200" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+  </div>
+
+  <div class="company-details">
+    <p><strong>CÔNG TY TNHH VẬN TẢI VÀ DU LICH EZIGO TRAVEL</strong></p>
+    <p>Số ĐKKD 0110972216 do Sở KHĐT TP. Hà Nội cấp ngày <strong>04/03/2025</strong></p>
+    <p><strong>Địa chỉ:</strong> Toà CT2A khu Chung Cư Vp Quốc Hội, Nam Từ Liêm, Hà Nội</p>
+    <p><strong>Hotline:</strong> <a href="tel:0968327653">0968327653</a></p>
+    <p><strong>Email:</strong> <a href="mailto:sales1.ezigotravel@gmail.com">sales1.ezigotravel@gmail.com</a></p>  
+    <p><strong>Website:</strong> <a href="https://www.facebook.com/people/Ezigo-Travel/61574435828601/" target="_blank">https://www.facebook.com/people/Ezigo-Travel/61574435828601/</a></p>
+    <p>
+      <a href="#">ĐIỀU KHOẢN, CHÍNH SÁCH CHUNG</a> và 
+      <a href="#">CHÍNH SÁCH BẢO MẬT</a>
+    </p>
+  </div>
+</section>
+
+
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
+
