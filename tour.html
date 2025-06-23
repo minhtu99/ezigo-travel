@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ezigo Travel - Chi tiết tour</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="tour-detail.css">
+
+</head>
+
+<body>
+
+<!-- ===== HEADER giữ nguyên ===== -->
+<header class="main-header">
+  <div class="top-header">
+    <div class="logo-wrapper">
+      <img src="Ezigo.jpg" alt="Ezigo Travel Logo" class="logo-animated">
+    </div>
+    <div class="search-bar">
+      <input id="searchInput" type="text" placeholder="">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <div class="header-icons">
+      <div><i class="fas fa-user"></i><span>Tài khoản</span></div>
+      <div><i class="fas fa-heart"></i><span>Yêu thích <b class="badge">0</b></span></div>
+      <div><i class="fas fa-shopping-bag"></i><span>Giỏ hàng <b class="badge">0</b></span></div>
+    </div>
+  </div>
+
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="index.html">TRANG CHỦ</a></li>
+      <li><a href="#gioi-thieu">GIỚI THIỆU</a></li>
+      <li class="dropdown" id="tourDropdown">
+        <a href="#" id="dropdownToggle">TOUR DU LỊCH <i class="fas fa-angle-down"></i></a>
+        <ul class="dropdown-content">
+          <li><a href="#tour-kenhga">Minawa Kênh Gà</a></li>
+          <li><a href="#tour-catba">Flamingo Cát Bà</a></li>
+          <li><a href="#tour-tamcoc">Tam Cốc Melody Homestay</a></li>
+        </ul>
+      </li>
+      <li><a href="#">TIN TỨC</a></li>
+      <li><a href="#khach-san">KHÁCH SẠN</a></li>
+      <li><a href="#lien-he">LIÊN HỆ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== Nội dung chi tiết tour ===== -->
+<main>
+  <div class="tour-page">
+    <!-- Trái: Chi tiết -->
+    <div class="tour-left" id="tourDetail">Đang tải tour...</div>
+
+    <!-- Phải: Tour liên quan -->
+    <aside class="tour-right">
+      <h3>Tour tương tự</h3>
+      <div class="related-tours">
+        <div class="related-item">
+          <img src="images/hn_tour_1.jpg" alt="">
+          <div>
+            <p class="title">Hà Nội City Tour 1 Ngày</p>
+            <p><span class="old">1.050.000 ₫</span> <span class="new">750.000 ₫</span></p>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+
+        <div class="related-item">
+          <img src="images/mocchau_tour.jpg" alt="">
+          <div>
+            <p class="title">Mộc Châu - Mai Châu 2N1Đ</p>
+            <p><span class="old">1.550.000 ₫</span> <span class="new">1.200.000 ₫</span></p>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+
+        <!-- Thêm các tour khác tương tự -->
+      </div>
+    </aside>
+  </div>
+</main>
+
+
+<!-- ===== SCRIPT hiển thị dữ liệu ===== -->
+<script>
+  const tours = {
+    halong1: {
+      title: "Hạ Long – Yên Tử 3 Ngày 2 Đêm",
+      image: "images/halong_tour_1.png",
+      priceOld: "4.450.000 ₫",
+      priceNew: "4.050.000 ₫",
+      hotline: "0898.695.333"
+    },
+    halong2: {
+      title: "Hạ Long – Cát Bà 2 Ngày",
+      image: "images/halong_tour_2.png",
+      priceOld: "3.000.000 ₫",
+      priceNew: "1.850.000 ₫",
+      hotline: "0898.695.333"
+    }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  const container = document.getElementById("tourDetail");
+
+  if (id && tours[id]) {
+    const t = tours[id];
+    container.innerHTML = `
+      <div class="tour-image">
+        <img src="${t.image}" alt="${t.title}">
+      </div>
+      <div class="tour-info">
+        <h1>${t.title}</h1>
+        <p>Giá gốc: <span class="old-price">${t.priceOld}</span></p>
+        <p>Giá KM: <span class="new-price">${t.priceNew}</span></p>
+        <p>Hotline: <span class="hotline">${t.hotline}</span></p>
+        <a class="back-link" href="index.html">← Quay lại</a>
+      </div>
+    `;
+  } else {
+    container.innerHTML = `<p>Không tìm thấy thông tin tour.</p>`;
+  }
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>

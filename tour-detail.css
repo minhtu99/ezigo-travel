@@ -1,0 +1,139 @@
+.tour-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.tour-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.tour-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.tour-image img:hover {
+  transform: scale(1.02);
+}
+
+.tour-info {
+  flex: 1;
+  min-width: 300px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.tour-info h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.tour-info p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.tour-info .old-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.tour-info .new-price {
+  color: #e60000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tour-info .hotline {
+  color: #f90;
+  font-weight: bold;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 25px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.tour-page {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tour-left {
+  flex: 3;
+}
+
+.tour-right {
+  flex: 1;
+}
+
+.tour-right h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.related-tours {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.related-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.related-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.related-item .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 3px;
+}
+
+.related-item .old {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 13px;
+}
+
+.related-item .new {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.related-item .stars {
+  color: orange;
+  font-size: 14px;
+}

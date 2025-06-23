@@ -438,3 +438,150 @@ body {
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
+
+/* title phụ dưới ảnh */
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px 20px;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  max-width: 220px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: #333;
+}
+
+.feature-box i {
+  font-size: 30px;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.feature-box h4 {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+/* tour nổi bật */
+.best-sellers {
+  padding: 40px 20px;
+  background-color: #fefefe;
+  text-align: center;
+}
+
+.best-sellers .section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.tour-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tour-item {
+  background: #fff;
+  width: 260px;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.tour-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tour-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  height: auto;
+  object-fit: cover;
+}
+
+.tour-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #001566;
+  min-height: 48px;
+}
+
+.price {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 8px;
+}
+
+.new-price {
+  color: #d10000;
+  font-weight: bold;
+}
+
+
+.halong-tours {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.halong-tours .section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.halong-tours .section-subtitle {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.halong-tours .tour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 5px;
+  justify-items: center;
+}
+
+.halong-tours .tour-item {
+  width: 100%;
+  max-width: 280px;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 8px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.halong-tours .tour-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.halong-tours .tour-item img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
