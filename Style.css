@@ -557,7 +557,7 @@ body {
   font-weight: 500;
 }
 
-.halong-tours .tour-grid {
+.halong-tours .tour-grid { 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 5px;
